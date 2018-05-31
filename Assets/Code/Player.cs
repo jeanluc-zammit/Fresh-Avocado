@@ -12,7 +12,15 @@ public class Player : MonoBehaviour {
 	public float maxSpeed = 5f;
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
-	public Text Battery_Count;
+
+
+	//BATTERY PROPERTIES
+
+	//battery count text
+	//public Text BatteryCount;
+
+	//variable for battery
+	//public int CountBattery;
 
 
 	// Use this for initialization
@@ -32,6 +40,8 @@ public class Player : MonoBehaviour {
 		*/
 		//the text which will appear on screen
 
+		//setting battery variable count to 0
+		//CountBattery = 0;
 
 
 
@@ -64,5 +74,24 @@ public class Player : MonoBehaviour {
 
 			rb2d.velocity = new Vector2(0f, 0f);
 		}
+
+		//BatteryCount.text = CountBattery.ToString();
 	}
+
+	// if touches the player, add 1 to battery count and destroy instance
+	/*
+	void OnTriggerEnter2D (Collider2D batt) {
+
+		if (batt.tag == "battery") {
+
+			CountBattery++;
+
+			Debug.Log (CountBattery);
+
+			//Destroy(GameObject.Find("battery"));
+			Destroy (GameObject.FindWithTag("battery"));
+
+		}
+	}
+	*/
 }

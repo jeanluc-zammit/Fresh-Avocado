@@ -6,24 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class CollectBattery : MonoBehaviour {
 
-	public Text BatteryCount;
+	void OnTriggerEnter2D(Collider2D col) {
 
-	public int CountBattery;
-
-	// Use this for initialization
-	void Start () {
-		CountBattery = 0;
+		BatteryCounter.Battery_Count += 1;
+		Destroy (gameObject);
 	}
 	
-	// Update is called once per frame
-	void OnTriggerEnter2D (Collider2D Player) {
 
-		if (Player.tag == "battery") {
-
-			CountBattery ++;
-
-			Debug.Log (CountBattery);
-
-		}
 	}
-}
+
