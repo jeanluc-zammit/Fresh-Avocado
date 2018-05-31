@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fresh-Avocado", "Assembly-CSharp.csproj", "{93CBDEC2-FE5E-7943-FAF6-9232DBC624B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CBDEC2-FE5E-7943-FAF6-9232DBC624B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CBDEC2-FE5E-7943-FAF6-9232DBC624B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CBDEC2-FE5E-7943-FAF6-9232DBC624B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CBDEC2-FE5E-7943-FAF6-9232DBC624B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
