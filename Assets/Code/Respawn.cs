@@ -18,8 +18,9 @@ public class Respawn : MonoBehaviour {
 
 			//transform.position = new Vector2 (-2.46, -1.14);
 			//other.transform.position = respawnPoint.position;
-			SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-			LifeCounter.Life_Count --;
+			//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+			SceneManager.LoadScene ("GameOver");
+			//LifeCounter.Life_Count --;
 		}
 	}
 }
