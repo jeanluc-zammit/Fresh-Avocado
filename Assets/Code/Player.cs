@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
-	public float offset;
-	public float moveForce = 365f;
+	//public float offset;
+	//public float moveForce = 365f;
 	public float maxSpeed = 5f;
-	public float jumpForce = 1000f;
-	public Transform groundCheck;
+	public float jumpForce = 50f;
+	//private bool isJumping = false;
+
+
 
 
 	//BATTERY PROPERTIES
@@ -48,8 +50,39 @@ public class Player : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+		//isTouchingGround = Physics2D.OverlapBox (groundCheck.position, groundCheckRadius, groundLayer);
 
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (maxSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+		}
+		else if (Input.GetKey (KeyCode.Space)) {
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpForce);
+			//rb2d.AddForce(Vector2.up * jumpForce * Time.deltaTime);
+		}
+
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (-maxSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+		}
+		else if (Input.GetKey (KeyCode.Space)) {
+		 GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpForce);
+			//rb2d.AddForce(Vector2.up * jumpForce * Time.deltaTime);
+		}
+	}
+		
+
+	//private void OnCollisionEnter2D(Collision2D col) {
+
+
+
+
+	//}
+
+}
+
+
+		/*		
 		if (Input.GetKey (KeyCode.UpArrow)) {
 
 			rb2d.velocity = new Vector2 (0f, 5f);
@@ -73,10 +106,18 @@ public class Player : MonoBehaviour {
 		} else {
 
 			rb2d.velocity = new Vector2(0f, 0f);
-		}
+		}*/
+		
+
 
 		//BatteryCount.text = CountBattery.ToString();
-	}
+	
+
+
+
+
+
+
 
 	// if touches the player, add 1 to battery count and destroy instance
 	/*
@@ -94,4 +135,3 @@ public class Player : MonoBehaviour {
 		}
 	}
 	*/
-}

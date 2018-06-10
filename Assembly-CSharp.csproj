@@ -52,8 +52,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Code\BatteryCounter.cs" />
+     <Compile Include="Assets\Code\BeeAI.cs" />
      <Compile Include="Assets\Code\CollectBattery.cs" />
+     <Compile Include="Assets\Code\End.cs" />
+     <Compile Include="Assets\Code\GameOver.cs" />
+     <Compile Include="Assets\Code\GameStart.cs" />
+     <Compile Include="Assets\Code\LevelCard.cs" />
+     <Compile Include="Assets\Code\LifeCounter.cs" />
+     <Compile Include="Assets\Code\LifeReset.cs" />
      <Compile Include="Assets\Code\Player.cs" />
+     <Compile Include="Assets\Code\Respawn.cs" />
+     <Compile Include="Assets\Code\SnailAI.cs" />
+     <Compile Include="Assets\Code\Timer.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
