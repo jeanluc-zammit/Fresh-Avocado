@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
@@ -25,6 +26,14 @@ public class Timer : MonoBehaviour {
 		startingTimer -= Time.deltaTime;
 
 		theText.text = "" + Mathf.Round (startingTimer);
+
+		if (startingTimer <= 0) {
+
+			SceneManager.LoadScene ("GameOver");
+
+			//Time.timeScale = 0;
+
+		}
 
 		//overlay.color 
 

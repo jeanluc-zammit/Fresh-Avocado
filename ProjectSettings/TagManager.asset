@@ -8,6 +8,7 @@ TagManager:
   - killplane
   - enemy
   - ground
+  - opposite
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - 
   - ground
-  - 
-  - 
+  - turnaround
+  - turnopposite
   - 
   - 
   - 
@@ -44,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2959732017
+    locked: 0
+  - name: foreground
+    uniqueID: 703518241
     locked: 0

@@ -61,6 +61,7 @@
      <Compile Include="Assets\Code\LifeCounter.cs" />
      <Compile Include="Assets\Code\LifeReset.cs" />
      <Compile Include="Assets\Code\Player.cs" />
+     <Compile Include="Assets\Code\Playerdontcollide.cs" />
      <Compile Include="Assets\Code\Respawn.cs" />
      <Compile Include="Assets\Code\SnailAI.cs" />
      <Compile Include="Assets\Code\Timer.cs" />

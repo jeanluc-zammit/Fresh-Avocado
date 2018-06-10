@@ -16,11 +16,18 @@ public class SnailAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Translate (new Vector2 (-speed, 0) * Time.deltaTime);
+
+
 	}
 
-	void OnTriggerEnter2D(Collider2D col) {
+	void OnTriggerEnter2D(Collider2D stop) {
 
-		if (col.tag == "Player") {
+		if (stop.tag == "opposite") {
+
+			speed *= -1;
+		}
+
+		if (stop.tag == "Player") {
 
 			//RELOAD THE SCENE AND DECREASE LIFE COUNTER
 			//LifeCounter.Life_Count -=1 ;
@@ -30,6 +37,8 @@ public class SnailAI : MonoBehaviour {
 			SceneManager.LoadScene ("GameOver");
 
 		}
+
+
 
 		//RESPAWNING
 		//transform.position = new Vector2 (-2.46, -1.14);

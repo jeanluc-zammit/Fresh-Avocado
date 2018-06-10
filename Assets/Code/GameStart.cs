@@ -14,7 +14,7 @@ public class GameStart : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey (KeyCode.Return)) {
 
-			SceneManager.LoadScene ("Level_Card");
+			SceneManager.LoadScene ("Level 1");
 
 			PlayerPrefs.SetInt("LifeCountStart", Life_Count);
 

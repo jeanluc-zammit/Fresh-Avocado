@@ -11,10 +11,11 @@ public class BeeAI : MonoBehaviour {
 	//public float stoppingDistance;
 
 	//private Transform target;
-
+	/*
 	int direction = 1; //int direction where 0 is stay, 1 up, -1 down    
-	int top = 3;
-	int bottom = -3;
+	int top = 2;
+	int bottom = -2;
+	*/
 
 	[SerializeField] Transform respawnPoint;
 
@@ -26,11 +27,15 @@ public class BeeAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//CHASE PLAYER
 		/*
 		if (Vector2.Distance (transform.position, target.position) > stoppingDistance) {
 			transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
 		}
 		*/
+
+		transform.Translate (new Vector2 (0, -speed) * Time.deltaTime);
+		/*
 		if (transform.position.y >= top)
 			direction = -1;
 
@@ -39,8 +44,16 @@ public class BeeAI : MonoBehaviour {
 
 		transform.Translate(0, speed * direction * Time.deltaTime, 0);
 	}
+	*/
+
+}
 
 	void OnTriggerEnter2D(Collider2D col) {
+
+		if (col.tag == "opposite") {
+
+			speed *= -1;
+		}
 
 		if (col.tag == "Player") {
 
@@ -53,13 +66,11 @@ public class BeeAI : MonoBehaviour {
 
 		}
 
-			//transform.position = new Vector2 (-2.46, -1.14);
-			//col.transform.position = respawnPoint.position;
+		//transform.position = new Vector2 (-2.46, -1.14);
+		//col.transform.position = respawnPoint.position;
 
 		//LifeCounter.Life_Count -= 1;
 		//Destroy (gameObject);
 		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
 	}
-
-
 }

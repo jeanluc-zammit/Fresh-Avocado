@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 
 
 
+
 	//BATTERY PROPERTIES
 
 	//battery count text
@@ -69,10 +70,15 @@ public class Player : MonoBehaviour {
 		 GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpForce);
 			//rb2d.AddForce(Vector2.up * jumpForce * Time.deltaTime);
 		}
+
 	}
 		
+	/*
+	void OnCollisionEnter2D(Collision2D col) {
+			//Physics2D.IgnoreCollision(opposite, collider2D);
+		Physics2D.IgnoreLayerCollision(9, 10);
 
-	//private void OnCollisionEnter2D(Collision2D col) {
+	}*/
 
 
 
