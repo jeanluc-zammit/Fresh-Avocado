@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 742
-  m_MinSize: {x: 913, y: 442}
+  m_MinSize: {x: 913, y: 421}
   m_MaxSize: {x: 22008, y: 10000}
   vertical: 0
-  controlID: 90
+  controlID: 225
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,10 +122,10 @@ MonoBehaviour:
     y: 0
     width: 611
     height: 742
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 23
+  controlID: 184
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,9 +186,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 99.3201, y: 10.47835, z: -10}
+    m_Target: {x: -0.11854121, y: -0.16133216, z: -10}
     speed: 2
-    m_Value: {x: 99.3201, y: 10.47835, z: -10}
+    m_Value: {x: -0.11854121, y: -0.16133216, z: -10}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -215,9 +215,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 18.813475
+    m_Target: 12.022316
     speed: 2
-    m_Value: 18.813475
+    m_Value: 12.022316
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 324
     width: 611
     height: 418
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -402,9 +402,9 @@ MonoBehaviour:
     height: 721
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48260000
+    m_SelectedIDs: 2c070000
     m_LastClickedID: 0
-    m_ExpandedIDs: 5edcffff1afcffff00000000d8310000
+    m_ExpandedIDs: cef5ffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,20 +490,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Code
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Code
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jeanpowerson/Desktop/Jean Stuff/MCAST/LV 6 YR 2 SEM 2/Game
     Engines/Final Game/Fresh Avocado/Fresh-Avocado
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 90260000
-    m_LastClickedID: 9872
-    m_ExpandedIDs: 000000000c260000582600006a26000000ca9a3bffffff7f
+    m_SelectedIDs: 2a260000
+    m_LastClickedID: 9770
+    m_ExpandedIDs: 000000000e2600005a2600006e26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c260000582600006a260000
+    m_ExpandedIDs: 000000000e2600005a2600006e26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,8 +556,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 48260000
-    m_LastClickedInstanceID: 9800
+    m_SelectedInstanceIDs: 2c070000
+    m_LastClickedInstanceID: 1836
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: fc2500007e2600007c3b0000ac430000
     m_RenameOverlay:
